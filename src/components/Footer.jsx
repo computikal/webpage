@@ -67,18 +67,6 @@ const socialLinks = [
     <span>{link.name}</span>
   </a>
 ))}
-  {socialLinks.map((link) => (
-  <a
-    key={link.name}
-    href={link.href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2"
-  >
-    {link.icon}
-    {link.name}
-  </a>
-))}
   
   return (
     <footer className="bg-[#0B1220] border-t border-slate-800 text-slate-300 text-xs pt-10 pb-6 overflow-hidden">
