@@ -30,13 +30,30 @@ export default function Footer() {
     { name: 'iOS Apps', href: '#services' },
   ];
 
-  const socialLinks = [
-    { name: 'LinkedIn Profile', icon: <Linkedin className="w-4 h-4 text-sky-400" />, href:='#https://linkedin.com/company/computikal target="_blank" },
-    { name: 'GitHub Showcase', icon: <Github className="w-4 h-4 text-slate-300" />, href:='#https://github.com/computikal/' target="_blank" },
-    { name: 'Twitter / X', icon: <Twitter className="w-4 h-4 text-blue-400" />, href: '#https://x.com/computikal' },
-    { name: 'Email Inquiry', icon: <Mail className="w-4 h-4 text-brand-red" />, href: '#mail@computikal.com' },
-  ];
 
+const socialLinks = [
+  {
+    name: 'LinkedIn Profile',
+    icon: <Linkedin className="w-4 h-4 text-sky-400" />,
+    href: 'https://linkedin.com/company/computikal',
+  },
+  {
+    name: 'GitHub Showcase',
+    icon: <Github className="w-4 h-4 text-slate-300" />,
+    href: 'https://github.com/computikal/',
+  },
+  {
+    name: 'Twitter / X',
+    icon: <Twitter className="w-4 h-4 text-blue-400" />,
+    href: 'https://x.com/computikal',
+  },
+  {
+    name: 'Email Inquiry',
+    icon: <Mail className="w-4 h-4 text-brand-red" />,
+    href: 'mailto:mail@computikal.com',
+  },
+];
+  
   return (
     <footer className="bg-[#0B1220] border-t border-slate-800 text-slate-300 text-xs pt-10 pb-6 overflow-hidden">
       <div className="section-container">
