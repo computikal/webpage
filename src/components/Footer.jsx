@@ -31,11 +31,12 @@ export default function Footer() {
   ];
 
 
+
 const socialLinks = [
   {
     name: 'LinkedIn Profile',
     icon: <Linkedin className="w-4 h-4 text-sky-400" />,
-    href: 'https://linkedin.com/company/computikal',
+    href: 'https://www.linkedin.com/company/computikal/',
   },
   {
     name: 'GitHub Showcase',
@@ -54,6 +55,18 @@ const socialLinks = [
   },
 ];
 
+{socialLinks.map((link) => (
+  <a
+    key={link.name}
+    href={link.href}
+    target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+  >
+    {link.icon}
+    <span>{link.name}</span>
+  </a>
+))}
   {socialLinks.map((link) => (
   <a
     key={link.name}
