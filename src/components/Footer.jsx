@@ -61,6 +61,7 @@ const socialLinks = [
     href={link.href}
        className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
   >
+     rel="noopener noreferrer"
     {link.icon}
     <span>{link.name}</span>
   </a>
