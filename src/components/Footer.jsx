@@ -59,7 +59,6 @@ const socialLinks = [
   <a
     key={link.name}
     href={link.href}
-    target={link.href.startsWith('mailto:') ? undefined : '_blank'}
     rel="noopener noreferrer"
     className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
   >
